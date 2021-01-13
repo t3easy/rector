@@ -33,6 +33,12 @@ final class ExtractAttributeRouteNameConstantsRectorTest extends AbstractRectorT
             'src/ValueObject/Routing/RouteName.php',
             __DIR__ . '/Source/extra_file.php',
         ];
+
+        yield [
+            new SmartFileInfo(__DIR__ . '/Fixture/numbers_route.php.inc'),
+            'src/ValueObject/Routing/RouteName.php',
+            __DIR__ . '/Source/extra_file_numbers_route.php',
+        ];
     }
 
     protected function getRectorClass(): string
